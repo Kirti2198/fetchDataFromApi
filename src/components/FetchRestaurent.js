@@ -62,7 +62,7 @@ export default class FetchRestaurent extends React.Component{
         {this.state.resData.banners.length<=0 ? "No Data to Show" :
           this.state.resData.banners.map((value,index)=>(
             <div key={value.bannerId}>
-              <img src={value.bannerImage} alt="banner image"/>
+              <img src={value.bannerImage} alt="banner Picture"/>
               <p>{value.bannerImage}</p>
               <p>{value.bannerId}</p>
             </div>  
@@ -80,7 +80,7 @@ export default class FetchRestaurent extends React.Component{
           <div key={data.restaurantId} >
             <h2 style={{textAlign:"center"}}>{data.restaurantName}</h2>
             <div style={{display:"flex",padding:"2%"}}>
-            <img src={data.restaurantImage} alt ="restaurent image" style={{height:"200px",width:"300px"}}/>
+            <img src={data.restaurantImage} alt ="restaurent Picture" style={{height:"200px",width:"300px"}}/>
             
             {data.outlet.map((row,i)=>(
               <table key={i}>
@@ -90,7 +90,7 @@ export default class FetchRestaurent extends React.Component{
                   <th>Total Amount</th>
                 </tr>
                 <tr>
-                  <td><img src={row.image} alt="dish img"/></td>
+                  <td><img src={row.image} alt="dish Picture"/></td>
                   <td>{row.outletName}</td>
                   <td>{row.totalAmount}</td>
                 </tr>
