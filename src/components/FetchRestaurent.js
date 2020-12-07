@@ -84,6 +84,7 @@ export default class FetchRestaurent extends React.Component{
             
             {data.outlet.map((row,i)=>(
               <table key={i}>
+                <tbody>
                 <tr>
                   <th>Dish</th>
                   <th>Outlet Name</th>
@@ -94,6 +95,7 @@ export default class FetchRestaurent extends React.Component{
                   <td>{row.outletName}</td>
                   <td>{row.totalAmount}</td>
                 </tr>
+                </tbody>
               </table>
             ))}
           
